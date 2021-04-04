@@ -1,0 +1,525 @@
+/* COMMON */
+body {
+  color: #333333;
+  /* 글자색상: #333333 */
+  font-size: 16px;
+  /* 폰트크기: 16px 기본값이지만 구조에 최상위요소에 명시적으로 사용 */
+  font-weight: 400;
+  /* 폰트두께: 400 */
+  line-height: 1.4;
+  /* 줄높이: 1.4배 사용하는 글꼴에 따라 달라질수 있다 */
+  font-family: 'Nanum Gothic', sans-serif;
+  /* 글꼴지정: 나눔고딕, 없을때는 산세리프체 */
+}
+img {
+  display: block;
+  /* 화면표시: 블록요소 */
+}
+a {
+  text-decoration: none;
+  /* 글자선사용: 사용하지 않음 */
+}
+.inner {
+  width: 1100px;
+  /* 너비: 1100px */
+  margin: 0 auto;
+  /* 가운데정렬 */
+  position: relative;
+  /* 위치상의 부모요소가 되기 위한 */
+}
+.btn {
+  width: 130px;
+  /* 너비: 130px */
+  padding: 10px;
+  /* 내부여백: 4방향 10px */
+  border: 2px solid #333;
+  /* 테두리: 두께2px 실선 색상#333 */
+  border-radius: 4px;
+  /* 테두리-모서리: 4px둥글게 */
+  color: #333;
+  /* 글자색상: #333 */
+  font-size: 16px;
+  /* 글자크기: 16px */
+  font-weight: 700;
+  /* 글자두께: 700 */
+  text-align: center;
+  /* 글자정렬: 가운데 */
+  cursor: pointer;
+  /* 마우스커서: 포인터 */
+  box-sizing: border-box;
+  /* 요소크기기준: 테두리까지 포함 */
+  display: block;
+  /* 화면표시: 블록요소 */
+  transition: .4s;
+  /* 전환효과: 0.4초 */
+}
+.btn:hover {
+  background-color: #333;
+  /* 배경-색상: #333 */
+  color: #fff;
+  /* 글자색상: #333 */
+}
+.btn.btn--reverse {
+  background-color: #333;
+  /* 배경-색상: #333 */
+  color: #fff;
+  /* 글자색상: #fff */
+}
+.btn.btn--reverse:hover {
+  background-color: transparent;
+  /* 배경-색상: 투명하게 */
+  color: #333;
+  /* 글자색상: #333 */
+}
+.btn.btn--brown {
+  color: #592B18;
+  /* 글자색상: #592B18 */
+  border-color: #592B18;
+  /* 테두리-색상: #592B18 */
+}
+.btn.btn--brown:hover {
+  color: #fff;
+  /* 글자색상: #fff */
+  background-color: #592B18;
+  /* 배경-색상: #592B18 */
+}
+.btn.btn--gold {
+  color: #D9AA8A;
+  /* 글자색상: #D9AA8A */
+  border-color: #D9AA8A;
+  /* 테두리-색상: #D9AA8A */
+}
+.btn.btn-gold:hover {
+  color: #fff;
+  /* 글자색상: #fff */
+  background-color: #D9AA8A;
+  /* 배경-색상: #D9AA8A */
+}
+.btn.btn--white {
+  color: #fff;
+  /* 글자색상: #fff */
+  border-color: #fff;
+  /* 테두리-색상: #fff */
+}
+.btn.btn--gold:hover {
+  color: #333;
+  /* 글자색상: #333 */
+  background-color: #fff;
+  /* 배경-색상: #fff */
+}
+.back-to-position {
+  opacity: 0;
+  /* 투명도 0; */
+  transition: 1s;
+  /* 전환효과: 1초 */
+}
+.back-to-position.to-right {
+  transform: translateX(-150px);
+  /* 변환효과: x축으로이동 -150px*/
+}
+.back-to-position.to-left {
+  transform: translateX(150px);
+  /* 변환효과: x축으로이동 150px */
+}
+.show .back-to-position {
+  opacity: 1;
+  /* 투명도: 1 */
+  transform: translateX(0);
+  /* 변환효과: x축이동(0) */
+}
+.show .back-to-position.delay-0 {
+  transition-delay: 0s;
+  /* 전환효과-지연시간: 0s */
+}
+.show .back-to-position.delay-1 {
+  transition-delay: .3s;
+  /* 전환효과-지연시간: 0s */
+}
+.show .back-to-position.delay-2 {
+  transition-delay: .6s;
+  /* 전환효과-지연시간: 0s */
+}
+.show .back-to-position.delay-3 {
+  transition-delay: .9s;
+  /* 전환효과-지연시간: 0s */
+}
+
+
+/* HEADER */
+header {
+  background-color: #f6f5f0;
+  /* 배경색상: #f6f6f6 */
+  border-bottom: 1px solid #c8c8c8;
+  /* 테두리선-아래: 두께1px 실선 색상#c8c8c8 */
+  position: fixed;
+  /* 위치: 브라우저에 viewport를 기준으로 배치 */
+  /* fixed도 위치상의 부모요소가 될수 있다 */
+  /* fixed, absolute는 가로너비가 최소한으로 줄어들려고 한다 */
+  top: 0;
+  /* 위에서 0 */
+  width: 100%;
+  /* 너비: 부모요소의 100% */
+  z-index: 9;
+  /* 요소쌓임순서: 클수록 위에 */
+}
+header > .inner {
+/* header의 자식요소 .inner */
+  height: 120px;
+  /* 높이: 120px; */
+}
+header .logo {
+  height: 75px;
+  /* 높이: 75px */
+  position: absolute;
+  /* 위치: 부모요소기준으로 배치 */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  /* 정렬을 위한 기준점 */
+  margin: auto;
+  /* 가운데 배치를 위해 필요한 속성: 위치, 높이/너비, 마진 */
+}
+header .sub-menu {
+  position: absolute;
+  /* 위치: 부모요소기준 */
+  top: 10px;
+  /* 위에서10px */
+  right: 0;
+  /* 오른쪽 기준점 */
+  display: flex;
+  /* 화면표시: flex 자식요소 수평정렬 */
+}
+header .sub-menu ul.menu {
+  font-family: Arial, sans-serif;
+  /* 글꼴지정 */
+  display: flex;
+    /* 화면표시: flex 자식요소 수평정렬 */
+}
+header .sub-menu ul.menu li {
+  position: relative;
+  /* 위치: 자식요소들의 기준점 만들기 */
+}
+header .sub-menu ul.menu li::before {
+  /* ::before 요소 내부의 앞에, 여기서 부모요소는 li */
+  content: "";
+  /* 가상 요소 선택자를 사용할때 필수 */
+  width: 1px;
+  /* 너비: 1px */
+  height: 12px;
+  /* 높이: 12px */
+  background-color: #e5e5e5;
+  /* 배경색상: #e5e5e5 */
+  position: absolute;
+  /* position을 사용하면 display는 자동으로 block로 바뀐다 */
+  top: 0;
+  bottom: 0;
+  /* 기준점 지정 */
+  margin: auto;
+  /* 가운데 정렬 */
+}
+header .sub-menu ul.menu li:first-child::before {
+  display: none;
+  /* 화면표시: 화면에 표시하지 않음 */
+}
+header .sub-menu ul.menu li a {
+  font-size: 12px;
+  /* 폰트크기: 12px */
+  padding: 11px 16px;
+  /* 내부여백: 위아래11px 좌우16px */
+  display: block;
+  /* 화면표시: 블록요소 */
+  color: #656565;
+  /* 폰트색상: #656565 */
+}
+header .sub-menu ul.menu li a:hover {
+  color: #000;
+  /* 폰트색상: #000 */
+}
+header .sub-menu .search {
+  height: 34px;
+  /* 높이: 34px */
+  position: relative;
+  /* 위치: 지삭요소중 absolute를 가진것의 기준이 되게 */
+}
+header .sub-menu .search input {
+  width: 36px;
+  /* 너비: 36px */
+  height: 34px;
+  /* 높이: 34px */
+  padding: 4px 10px;
+  /* 내부여백: 위아래4px 좌우10px */
+  border: 1px solid #ccc;
+  /* 테두리: 두께1px 실선 색상#ccc */
+  box-sizing: border-box;
+  /* 요소사이즈: 테두리선까지 포함해서 */
+  border-radius: 5px;
+  /* 모서리: 5px둥글게 */
+  outline: none;
+  /* input의 테두리: 사용하지 않음 */
+  background-color: #fff;
+  /* 배경색상: #fff */
+  color: #777;
+  /* 폰트색상: #777 */
+  font-size: 12px;
+  /* 폰트크기: 12px */
+  transition: width .4s;
+  /* 전환효과: 너비만 .4초 */
+}
+header .sub-menu .search input:focus {
+  width: 190px;
+  /* 너비: 190px */
+  border-color: #669900;
+  /* 테두리색상: #669900 */
+}
+header .sub-menu .search .material-icons {
+  height: 24px;
+  /* 높이: 24px */
+  position: absolute;
+  /* 위치: 부모요소를 기준으로 */
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  /* 기준점 */
+  margin: auto;
+  /* 외부여백: 가운데정렬 */
+  transition: .4s;
+  /* 전환효과: .4초 */
+}
+header .sub-menu .search.focused .material-icons {
+  opacity: 0;
+  /* 투명도: 0 */
+}
+header .main-menu {
+  position: absolute;
+  /* 위치: 부모요소를 기준으로 */
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  /* 요소쌓임순서 */
+  display: flex;
+  /* 화면표시: flex - 자식요소 수평 정렬 */
+}
+header .main-menu .item {
+
+}
+header .main-menu .item .item__name {
+  padding: 10px 20px 34px 20px;
+  /* 내부여백: 위10px 우20px 아래34px 좌20px */
+  font-family: Arial, sans-serif;
+  /* 글꼴지정: ,없으면 고딕체계열 */
+  font-size: 13px;
+  /* 폰트크기: 13px */
+}
+header .main-menu .item:hover .item__name {
+  background-color: #2c2a29;
+  /* 배경색상: #2c2a29 */
+  color: #669900;
+  /* 폰트색상: #669900 */
+  border-radius: 6px 6px 0 0;
+  /* 모서리: 좌상단6px 우상단6px 우하단0 좌하단0 */
+}
+header .main-menu .item .item__contents {
+  width: 100%;
+  /* 너비: 부모요소의 100% */
+  position: fixed;
+  /* 위치: 고정값(부모요소기준) */
+  left: 0;
+  display: none;
+  /* top이나 bottom 속성을 사용하지 않아 수직 위치 값이 없다면,
+  요소의 원래 위치를 그대로 사용합니다.
+  만약 position: absolute;를 사용 했다면 (위치상)부모 요소룰 기준으로 하므로
+  화면의 뷰포트 좌우 끝까지 늘어날 수 없게 됩니다. */
+}
+header .main-menu .item:hover .item__contents {
+  display: block;
+  /* 화면표시: 블록요소 */
+}
+header .main-menu .item .item__contents .contents__menu {
+  background-color: #2c2a29;
+}
+header .main-menu .item .item__contents .contents__menu > ul {
+/* depth가 깊어지면 하위요소 선택자보다 자식요소 선택지가 좋다 */
+  display: flex;
+  /* 화면표시: flex 자식요소가 수평정렬 */
+  padding: 20px 0;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li {
+/* depth가 깊어지면 하위요소 선택자보다 자식요소 선택지가 좋다 */
+  width: 220px;
+  /* 너비: 220px */
+}
+header .main-menu .item .item__contents .contents__menu > ul > li h4 {
+  padding: 3px 0 12px 0;
+  /* 내부여백: 위3px 우0 아래12px 좌0 */
+  font-size: 14px;
+  /* 폰트크기: 14px */
+  color: #fff;
+  /* 폰트색상: #fff */
+}
+header .main-menu .item .item__contents .contents__menu > ul > li ul li {
+  padding: 5px 0;
+  /* 내부여백: 위아래5px 좌우0 */
+  font-size: 12px;
+  /* 폰트크기: 12px */
+  color: #999;
+  /* 폰트색상: #999 */
+  cursor: pointer;
+  /* 마우스모양: 포인터 */
+}
+header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
+  color: #669900;
+}
+header .main-menu .item .item__contents .contents__texture {
+  font-size: 12px;
+  /* 폰트크기: 12px */
+  padding: 26px 0;
+  /* 내부여백: 위아래26px 좌우0 */
+  background-image: url("../images/main_menu_pattern.jpg");
+  /* 배경이미지:  */
+}
+header .main-menu .item .item__contents .contents__texture h4 {
+  color: #999;
+  /* 폰트색상: #999 */
+  font-weight: 700;
+  /* 폰트두께: 700 */
+}
+header .main-menu .item .item__contents .contents__texture p {
+  color: #669900;
+  /* 폰트색상: #669900 */
+  margin: 4px 0 14px;
+  /* 외부여백: 위4px 좌우0 아래14px */
+}
+header .badges {
+  position: absolute;
+  /* 위치: 위치상 부모요소를 기준으로 */
+  top: 132px;
+  /* 위에서 132px */
+  right: 12px
+  /* 오른쪽에서 12px */
+}
+header .badges .badge {
+  border-radius: 10px;
+  /* 모서리: 10px 둥글게 */
+  overflow: hidden;
+  /* 넘치는부분: 숨기기 */
+  margin-bottom: 12px;
+  /* 외부여백-아래: 12px */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
+  /* 그림자: x축4px y축4px 블러10px 색상(0, 0, 0, 투명도15%*/
+  cursor: pointer;
+  /* 마우스커서: 포인터 */
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #272727;
+  /* 배경-색상: #272727 */
+  border-top: 1px solid #333;
+  /* 테두리-위: 두께1px 실선 색상#333 */
+}
+footer .inner {
+  padding: 40px 0 60px 0;
+  /* 내부여백: 위40px 우0 아래60px 좌0 */
+}
+footer .menu {
+  display: flex;
+  /* 화면표시: flex */
+  justify-content: center;
+  /* flex수평정렬: 가운데정렬 */
+}
+footer .menu li {
+  position: relative;
+  /* 위치: 위치상 부모요소로 만들기 */
+}
+footer .menu li::before {
+  content: "";
+  /* 내용:  */
+  width: 3px;
+  /* 너비: 3px */
+  height: 3px;
+  /* 높이: 3px */
+  background-color: #555;
+  /* 배경-색상: #555 */
+  position: absolute;
+  /* 위치: 위치상의 부모요소 기준으로 배치 */
+  top: 0;
+  /* 위에서0 */
+  bottom: 0;
+  /* 아래서0 */
+  right: -1px;
+  /* 오른쪽에서-1px */
+  margin: auto;
+  /* 외부여백: 자동 */
+}
+footer .menu li:last-child::before {
+  display: none;
+  /* 화면표시: 보이지 않음 */
+}
+footer .menu li a {
+  color: #ccc;
+  /* 글자색: #ccc */
+  font-size: 12px;
+  /* 글자크기: 12px */
+  font-weight: 700;
+  /* 글자두께: 700 */
+  padding: 15px;
+  /* 내부여백: 15px */
+  display: block;
+  /* 화면표시: 블록요소 */
+}
+footer .menu li a.green {
+  color: #669900;
+  /* 글자색: #669900 */
+}
+footer .btn-group {
+  margin-top: 20px;
+  /* 외부여백-위: 20px */
+  display: flex;
+  /* 화면표시: flex */
+  justify-content: center;
+  /* flex수평정렬: center */
+}
+footer .btn-group .btn {
+  font-size: 12px;
+  /* 글자크기: 12px */
+  margin-right: 10px;
+  /* 외부여백: 10px */
+}
+footer .btn-group .btn:last-child {
+  margin-right: 0;
+  /* 외부여백-우: 0 */
+}
+footer .info {
+  margin-top: 30px;
+  /* 외부여백-위: 30px */
+  text-align: center;
+  /* 글자정렬: 가운데정렬 */
+}
+footer .info span {
+  margin-right: 20px;
+  /* 외부여백-우: 20px */
+  color: #999;
+  /* 글자색: #999 */
+  font-size: 12px;
+  /* 글자크기: 12px */
+}
+footer .info span:last-child {
+  margin-right: 0;
+  /* 외부여백-우: 0 */
+}
+footer .copyright {
+  color: #999;
+  /* 글자색: #999 */
+  font-size: 12px;
+  /* 글자크기: 12px */
+  text-align: center;
+  /* 글자정렬: 가운데정렬 */
+  margin-top: 12px;
+  /* 외부여백-위: 12px */
+}
+footer .logo {
+  margin: 30px auto 0;
+  /* img요소가 display:block; + margin: 0 auto; 인 경우,
+  width 속성이 없어도 가운데 정렬이 가능하다 */
+}
