@@ -1,0 +1,65 @@
+/* COMMON */
+.summary__title {
+  font-size: 34px !important;
+  /* 폰트크기: 34px 우선순위1등*/
+}
+.summary__description {
+  font-size: 22px;
+  /* 폰트크기: 22px */
+}
+
+
+/* FEATURE */
+.section--feature .tiles li {
+  width: 100%;
+  /* 너비: 부모요소의 100% */
+  border-right: none;
+  /* 테두리-우: 사용하지 않음 */
+  border-bottom: 1px solid #e5e5e5;
+  /* 테두리-아래: 두꼐1px 실선 색상#e5e5e5 */
+}
+
+
+/* WHERE IS */
+#map {
+  width: auto;
+  /* 너비: 자동 */
+  margin: 40px -20px 0 -20px;
+  /* 외부여백: 위40px 우-20px 아래0 좌-20px -값은 확대, 너비는 auto여야 한다 */
+  border-left: none;
+  /* 테두리-우: 사용하지않음 */
+  border-right: none;
+  /* 테두리-좌: 사용하지않음 */
+}
+
+
+/* PRICING */
+.section--pricing .card {
+  display: block;
+  /* 화면표시: 블록요소 */
+}
+.section--pricing .card .cell2 {
+  border-left: none;
+  /* 테두리-좌: 사용하지않음*/
+  border-top: 1px solid #e5e5e5;
+  /* 테두리-상: 두께1px 실선 색상#e5e5e5 */
+}
+
+
+/* FOOTER */
+footer .site-links {
+  float: none;
+  /* 요소띄움: 사용하지않음 */
+  display: block;
+  /* 화면표시: 블록요소 */
+  text-align: center;
+  /* 텍스트정렬: 가운데정렬 */
+}
+footer .site-links:first-child {
+  margin-bottom: 20px;
+  /* 외부여백-아래: 20px */
+}
+footer .site-links li {
+  display: inline;
+  /* 화면표시: 텍스트요소 */
+}

@@ -10,6 +10,37 @@
   height: 800px;
 }
 
+.body__container .visual .inner .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body__container .visual .inner .menu li {
+  width: 300px;
+  height: 500px;
+  padding: 50px 30px;
+}
+
+.body__container .visual .inner .menu li a {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  color: #ff00ff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.body__container .visual .inner .menu li a:hover {
+  color: #00ff00;
+}
+
 .body__container footer .inner {
   background-color: #663542;
   height: 100px;

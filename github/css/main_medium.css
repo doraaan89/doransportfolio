@@ -1,0 +1,170 @@
+header.section .inner {
+  max-width: none;
+  /* 최대너비: 사용하지 않음(초기화) */
+  height: auto;
+  /* 높이: 자동(기본값) */
+  padding: 0 20px;
+  /* 내부여백: 위아래0 좌우20px */   
+}
+header .menu-group, 
+header .sign-group {
+  float: none;
+  /* 요소띄움: 사용하지 않음 */
+}
+header .menu-group {
+  display: block;
+  /* 화면표시: 블록요소 */
+}
+header .logo {
+  padding: 12px 0;
+  /* 내부여백: 위아래12px 좌우0 */
+}
+header .main-menu {
+  display: block;
+  /* 화면표시: 블록요소 */
+  margin-bottom: 10px;
+  /* 외부여백-아래: 10px */
+}
+header .main-menu li {
+  border-top: 1px solid #e5e5e5;
+  /* 테두리-위: 두께1px 실선 색상#e5e5e5 */
+}
+header .main-menu li a {
+  padding: 16px 0;
+  /* 내부여백: 위아래16px 좌우0 */
+}
+header .sign-group {
+  display: block;
+  /* 화면표시: 블록요소 */
+  padding: 10px 0 20px;
+  /* 내부여백: 위10px 좌우0 아래20px */
+}
+header .btn-group {
+  display: block;
+  /* 화면표시: 블록요소 */
+}
+header .btn-group .btn {
+  justify-content: center;
+  /* flex에서 수평정렬: 가운데정렬 */
+}
+header .btn-group .sign-in {
+  margin-right: 0;
+  /* 외부여백-우: 0 */
+  margin-bottom: 12px;
+  /* 외부여백-아래: 12px */
+}
+#search-form {
+  margin-top: 12px;
+  /* 외부여백-위: 12px */
+  margin-right: 0;
+  /* 외부여백-우: 0; */
+}
+#search {
+  width: 100%;
+  /* 너비: 부모요소의 100% */
+  height: 42px;
+  /* 높이: 42px */
+  text-align: center;
+  /* 텍스트정렬: 가운데정렬 */
+}
+header .sub-menu {
+  margin-top: 12px;
+  /* 외부여백-위: 12px */
+  margin-right: 0;
+  /* 외부여백-우: 0; */
+  justify-content: center;
+  /* flex에서 수평정렬: 가운데정렬 */    
+}
+header .toggle {
+  display: none;
+  /* 화면에표시: 사용하지 않음 */
+}
+header .toggle.on {
+  display: block;
+  /* 화면표시: 블록요소 */
+}
+#toggle-btn {
+  display: block;
+  /* 화면표시: 블록요소 */
+}
+
+
+/* VISUAL */
+.section--visual {
+  background-image: url("../img/bg-small.jpg");
+}
+.section--visual .inner {
+  display: block;
+  /* 화면표시: 블록요소 */
+  max-width: none;
+  /* 최대너비: 사용하지않음 */
+  padding: 80px 20px;
+  /* 내부여백: 위아래80px 좌우20px */
+}
+.section--visual .summary {
+  text-align: center;
+  /* 텍스트정렬: 가운데정렬 */
+  margin-right: 0;
+  /* 외부여백-우: 0 */
+  margin-bottom: 50px;
+  /* 외부여백-아래: 50px */
+}
+#sign-form {
+  width: auto;
+  /* 너비: 초기화 */
+  max-width: 500px;
+  /* 최대너비: 500px */
+  margin: 0 auto;
+  /* 가운데 정렬 */
+}
+
+
+/* FEATURE */
+.section--feature .summary {
+  padding: 66px 20px 0 20px;
+  /* 내부여백: 위66px 우20px 아래0 좌20px */
+}
+.section--feature .tiles li {
+  width: 50%;
+  /* 너비: 부모요소의 50% */
+}
+.section--feature .tiles li:nth-child(2) {
+  border-right: none;
+  /* 테두리-우: 사용하지않음 */
+}
+.section--feature .tiles li img {
+  padding: 14px 30% 24px;
+  /* 내부여백: 위14px 좌우30% 아래24px */
+}
+
+
+/* WHERE IS */
+.section--where-is .inner {
+  max-width: none;
+  /* 최대너비: 사용하지않음 */
+  padding: 80px 20px 0;
+  /* 내부여백: 위80px 좌우20px 아래0 */
+}
+
+/* PRICING CARD */
+.section--pricing .inner {
+  max-width: none;
+  /* 최대너비: 사용하지않음 */
+  padding: 80px 20px;
+  /* 내부여백: 위아래80px 좌우20px */
+}
+.section--pricing .card .cell2 {
+  font-size: 20px;
+  /* 폰트크기: 20px */
+}
+
+
+/* FOOTER */
+footer .inner {
+  padding: 50px 20px;
+  /* 내부여백: 위아래50px 좌우20px */
+}
+footer .logo {
+  display: none;
+  /* 화면표시: 표시하지않음 */
+}
