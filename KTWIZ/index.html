@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header_topWrap">
+            <div class="header_top">
+                <ul>
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                    <li><a href="">kt sports</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header_menuWrap">
+            <div class="header_menu">
+                <div class="menu_view" onmouseover="on()" onmouseout="off()">
+                    <h1><img src="img/logo.33f34671 (1).png" alt=""></h1>
+                    <ul class='menuWrap'>
+                        <li><a href="">kt wiz</a></li>
+                        <li><a href="">wiz park</a></li>
+                        <li><a href="">Game</a></li>
+                        <li><a href="">Player</a></li>
+                        <li><a href="">Media</a></li>
+                        <li><a href="">Shop</a></li>
+                    </ul>
+                    <ul class="ticket">
+                        <li><a href="">ticket</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hidden_menu" id="hidden" style="height: 1px;" onmouseover="on()" onmouseout="off()">
+                <ul class="menu menu1">
+                    <li><a href="">kt wiz는?</a></li>
+                    <li><a href="">구단 BI</a></li>
+                    <li><a href="">회원 정책</a></li>
+                    <li><a href="">스폰서</a></li>
+                    <li><a href="">월페이퍼</a></li>
+                </ul>
+
+                <ul class="menu menu2">
+                    <li><a href="">Suwon<br />kt wiz park</a></li>
+                    <li><a href="">5G 스타디움</a></li>
+                    <li><a href="">주차 예약 / 셔틀버스</a></li>
+                    <li><a href="">찾아오기</a></li>
+                    <li><a href="">익산야구장</a></li>
+                </ul>
+
+                <ul class="menu menu3">
+                    <li><a href="">정규리그</a></li>
+                    <li><a href="">퓨쳐스리그</a></li>
+                </ul>
+
+                <ul class="menu menu4">
+                    <li><a href="">코칭 스텝</a></li>
+                    <li><a href="">투수</a></li>
+                    <li><a href="">타자</a></li>
+                    <li><a href="">응원단</a></li>
+                    <li><a href="">응원가</a></li>
+                </ul>
+
+                <ul class="menu menu5">
+                    <li><a href="">wiz 뉴스</a></li>
+                    <li><a href="">wiz 스토리</a></li>
+                    <li><a href="">시구자 정보</a></li>
+                    <li><a href="">wiz 포토</a></li>
+                    <li><a href="">하이라이트</a></li>
+                    <li><a href="">Live 영상 모음</a></li>
+                </ul>
+
+                <ul class="menu menu_ticket">
+                    <li><a href="">티켓 예매</a></li>
+                    <li><a href="">스카이 박스 / 단체 관람</a></li>
+                    <li><a href="">입장 및 좌석 정보</a></li>
+                </ul>
+            </div>
+
+            <script>
+                var menu = document.getElementById('hidden');
+
+                function on() {
+                    menu.style.height = 'auto'
+
+                    console.log(menu.style.height)
+                }
+
+                function off() {
+                    menu.style.height = '0px'
+                }
+            </script>
+        </div>
+    </div>
+
+    <!-- CONTANT -->
+    <div class="content_top">
+        <div class="topWrap">
+            <img src="img/main_slide_02.a72607fe.png" alt="">
+            <div class="slider_button">
+                <div class="prev">
+                    <img src="" alt="">
+                </div>
+                <div class="next">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="content_issue">
+        <div class="issue_header">
+            <h2>HOT ISSUE</h2>
+            <a href="" class="issue_more">더보기 ></a>
+        </div>
+
+        <div class="sliderWrap">
+            <div class="issue_boxWrap">
+                <div class="issue_box">
+                    <img src="img/20201028132110.2ee-028b5877e78b.png" alt="">
+                    <ul class="box_text">
+                        <h3>위즈소식</h3>
+                        <p>[안내] wiz the LIVE 시즌 금의...</p>
+                        <p>안녕하세요. kt wiz 입니다. wiz the LIVE 시즌 1 금의환향 안내드립니다. 일정:...</p>
+                        <div class="text_more">
+                            <a href="">더보기</a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="issue_box">
+                    <img src="img/20201028132110.2ee-028b5877e78b.png" alt="">
+                    <ul class="box_text">
+                        <h3>위즈소식</h3>
+                        <p>[안내] wiz the LIVE 시즌 금의...</p>
+                        <p>안녕하세요. kt wiz 입니다. wiz the LIVE 시즌 1 금의환향 안내드립니다. 일정:...</p>
+                        <div class="text_more">
+                            <a href="">더보기</a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="issue_box">
+                    <img src="img/20201028132110.2ee-028b5877e78b.png" alt="">
+                    <ul class="box_text">
+                        <h3>위즈소식</h3>
+                        <p>[안내] wiz the LIVE 시즌 금의...</p>
+                        <p>안녕하세요. kt wiz 입니다. wiz the LIVE 시즌 1 금의환향 안내드립니다. 일정:...</p>
+                        <div class="text_more">
+                            <a href="">더보기</a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="issue_box">
+                    <img src="img/20201028132110.2ee-028b5877e78b.png" alt="">
+                    <ul class="box_text">
+                        <h3>위즈소식</h3>
+                        <p>[안내] wiz the LIVE 시즌 금의...</p>
+                        <p>안녕하세요. kt wiz 입니다. wiz the LIVE 시즌 1 금의환향 안내드립니다. 일정:...</p>
+                        <div class="text_more">
+                            <a href="">더보기</a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="issue_box">
+                    <img src="img/20201028132110.2ee-028b5877e78b.png" alt="">
+                    <ul class="box_text">
+                        <h3>위즈소식</h3>
+                        <p>[안내] wiz the LIVE 시즌 금의...</p>
+                        <p>안녕하세요. kt wiz 입니다. wiz the LIVE 시즌 1 금의환향 안내드립니다. 일정:...</p>
+                        <div class="text_more">
+                            <a href="">더보기</a>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="issue_button">
+            <span class="material-icons button_prev">arrow_back</span>
+            <span class="material-icons button_next">arrow_forward</span>
+        </div>
+
+        <script src="js/slider.js"></script>
+
+
+    </section>
+
+    <section class="content_video">
+        <div class="video_header">
+            <h2>VIDEO</h2>
+            <a href="" class="video_more">더보기 ></a>
+        </div>
+
+        <div class="video_content">
+            <div class="video_left">
+                <img src="img/3.jpg" alt="">
+                <ul class="left_button">
+                    <li class="pitching">
+                        <a href=""><img src="img/12345.png" alt=""></a>
+                        <span>피칭분석</span>
+                    </li>
+                    <li class="tracking">
+                        <a href=""><img src="img/12345.png" alt=""></a>
+                        <span>모션트래킹</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="video_right">
+                <div class="rightWrap">
+                    <img src="img/1.jpg" alt="">
+                    <div class="rightWrap_text">
+                        <a href="">하이라이트</a>
+                        <p>[11/13] 'PO의 시작과 끝' PO MVP 플렉센, PS 삼진 3분 요약!</p>
+                        <p>등록 일자 : 2020년 11월 14일</p>
+                    </div>
+                </div>
+
+                <div class="rightWrap">
+                    <img src="img/1.jpg" alt="">
+                    <div class="rightWrap_text">
+                        <a href="">하이라이트</a>
+                        <p>[11/13] 'PO의 시작과 끝' PO MVP 플렉센, PS 삼진 3분 요약!</p>
+                        <p>등록 일자 : 2020년 11월 14일</p>
+                    </div>
+                </div>
+
+                <div class="rightWrap">
+                    <img src="img/1.jpg" alt="">
+                    <div class="rightWrap_text">
+                        <a href="">하이라이트</a>
+                        <p>[11/13] 'PO의 시작과 끝' PO MVP 플렉센, PS 삼진 3분 요약!</p>
+                        <p>등록 일자 : 2020년 11월 14일</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="content_gallery">
+        <div class="gallery_header">
+            <h2>GALLERY</h2>
+            <a href="" class="GALLERY_more">더보기 ></a>
+        </div>
+
+        <div class="gallery_boxWrap">
+            <div class="gallery_box">
+                <img src="img/20201124142642.075-942b2031bb04.jpg" alt="">
+                <div class="box_text">
+                    <a href="">훈련</a>
+                    <p>11월 22일 익산 마무리 훈련</p>
+                    <p>등록 일자 : 2020년 11월 24일</p>
+                </div>
+            </div>
+
+            <div class="gallery_box">
+                <img src="img/20201124142642.075-942b2031bb04.jpg" alt="">
+                <div class="box_text">
+                    <a href="">훈련</a>
+                    <p>11월 22일 익산 마무리 훈련</p>
+                    <p>등록 일자 : 2020년 11월 24일</p>
+                </div>
+            </div>
+
+            <div class="gallery_box">
+                <img src="img/20201124142642.075-942b2031bb04.jpg" alt="">
+                <div class="box_text">
+                    <a href="">훈련</a>
+                    <p>11월 22일 익산 마무리 훈련</p>
+                    <p>등록 일자 : 2020년 11월 24일</p>
+                </div>
+            </div>
+
+            <div class="gallery_box">
+                <img src="img/20201124142642.075-942b2031bb04.jpg" alt="">
+                <div class="box_text">
+                    <a href="">훈련</a>
+                    <p>11월 22일 익산 마무리 훈련</p>
+                    <p>등록 일자 : 2020년 11월 24일</p>
+                </div>
+            </div>
+
+            <div class="gallery_box">
+                <img src="img/20201124142642.075-942b2031bb04.jpg" alt="">
+                <div class="box_text">
+                    <a href="">훈련</a>
+                    <p>11월 22일 익산 마무리 훈련</p>
+                    <p>등록 일자 : 2020년 11월 24일</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="gallery_btn">
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </section>
+
+    <section class="content_banner">
+        <div class="imgWrap">
+            <img src="img/sec6_banner_player_2008.15464b1c.png" alt="">
+            <img src="img/sec6_banner_wizmall.494a1ab1.png" alt="">
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer_content">
+            <ul class="content_left">
+                <li><a href="">개인정보취급방침</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">이메일무단수집거부</a></li>
+                <li><a href="">site map</a></li>
+                <li><a href="">윤리경영</a></li>
+            </ul>
+
+            <div class="content_right">
+                <a href="">계열사 및 kt 관련 사이트</a>
+            </div>
+        </div>
+
+        <div class="footerWrap">
+            <div class="footer_info">
+                <p>주소 : 경기도 수원시 장안구 경수대로 893(조원동) 수원 케이티 위즈 파크</p>
+                <p>대표번호 : 1899-5916(운영시간 : 평일 - 10:00 ~ 18:00, 주말 10:00 ~ 경기 시작 전까리, 월요일 및 주말 미 경기 시 미운영)</p>
+                <p>Copyright 2020 kt sports.All rights reserved.</p>
+            </div>
+
+            <ul class="footer_sns">
+                <li><a href=""><img src="img/다운로드 (7).png" alt=""></a></li>
+                <li><a href=""><img src="img/다운로드 (7).png" alt=""></a></li>
+                <li><a href=""><img src="img/다운로드 (7).png" alt=""></a></li>
+                <li><a href=""><img src="img/다운로드 (7).png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
