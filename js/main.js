@@ -1,6 +1,6 @@
 new Swiper('.visual .swiper-container', {
   slidesPerView: 2,
-  spaceBetween: 100,
+  spaceBetween: 30,
   centeredSlides: true,
   loop: true,
   // autoplay: {
