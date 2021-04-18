@@ -97,3 +97,15 @@
 .visual .swiper-next {
   display: none;
 }
+
+/* FOOTER */
+.contactus h4 {
+  font-size: 24px;
+}
+.contactus span {
+  font-size: 14px;
+}
+.copy {
+  padding: 15px 0;
+  font-size: 14px;
+}

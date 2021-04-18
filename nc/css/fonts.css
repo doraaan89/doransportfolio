@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'BaronNeue';
+  src: url('../fonts/BaronNeue/BaronNeue.eot');
+  src: url('../fonts/BaronNeue/BaronNeue.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BaronNeue/BaronNeue.svg#BaronNeue') format('svg'),
+    url('../fonts/BaronNeue/BaronNeue.ttf') format('truetype'),
+    url('../fonts/BaronNeue/BaronNeue.woff') format('woff'),
+    url('../fonts/BaronNeue/BaronNeue.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'D2Coding';
+  src: url('https://cdn.jsdelivr.net/gh/Joungkyun/font-d2coding@1.3.2/D2Coding.eot');
+  src: url('https://cdn.jsdelivr.net/gh/Joungkyun/font-d2coding@1.3.2/D2Coding.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/Joungkyun/font-d2coding@1.3.2/D2Coding.svg') format('svg'),
+    url('https://cdn.jsdelivr.net/gh/Joungkyun/font-d2coding@1.3.2/D2CodingBold.ttf') format('truetype'),
+    url('https://cdn.jsdelivr.net/gh/Joungkyun/font-d2coding@1.3.2/D2CodingBold.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/Joungkyun/font-d2coding@1.3.2/D2CodingBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'eurof35';
+  src: url('../fonts/eurof/eurof35.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'eurof55';
+  src: url('../fonts/eurof/eurof55.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'eurof75';
+  src: url('../fonts/eurof/eurof75.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

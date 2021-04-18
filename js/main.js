@@ -3,9 +3,9 @@ new Swiper('.visual .swiper-container', {
   spaceBetween: 30,
   centeredSlides: true,
   loop: true,
-  // autoplay: {
-  //   delay: 3000
-  // },
+  autoplay: {
+    delay: 3000
+  },
   pagination: {
     el: '.visual .swiper-pagination',
     clickable: true

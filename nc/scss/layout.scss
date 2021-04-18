@@ -1,0 +1,25 @@
+$break-m: 767px;
+$break-p: 768px;
+
+@mixin respond-to($media) {
+  @if $media==m {
+    @media only screen and (max-width: $break-m) {
+      @content;
+    }
+  }
+
+  @else if $media==p {
+    @media only screen and (min-width: $break-p) {
+      @content;
+    }
+  }
+}
+
+@mixin fc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// @include respond-to(m) {}
+// @include respond-to(p) {}

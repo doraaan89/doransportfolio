@@ -1,0 +1,32 @@
+$break-m: 767px;
+$break-p: 1024px;
+
+@mixin respond-to($media) {
+  @if $media==m {
+    @media only screen and (max-width: $break-m) {
+      @content;
+    }
+  }
+
+  @else if $media==t {
+    @media only screen and (min-width: $break-m + 1) and (max-width: $break-p - 1) {
+      @content;
+    }
+  }
+
+  @else if $media==p {
+    @media only screen and (min-width: $break-p) {
+      @content;
+    }
+  }
+}
+
+.sample {
+  @include respond-to(m) {
+    width: 100%;
+  }
+
+  @include respond-to(t) {}
+
+  @include respond-to(p) {}
+}

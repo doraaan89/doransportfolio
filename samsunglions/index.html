@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>삼성 라이온즈</title>
+    <script type="text/javascript">
+        // var bDisplay = true;
+        function doDisplay() {
+            var con = document.getElementById("open")
+            if (con.style.display == 'none') {
+                con.style.display = 'flex'
+            } else {
+                con.style.display = 'none'
+            }
+        }
+
+        var toggleswitch = 'off';
+
+        function toggle() {
+            var btn_img = document.getElementById('toggle');
+            var slider = document.getElementById('imgwrap');
+            if(toggleswitch == 'off') {
+                btn_img.setAttribute('src', 'img/close_btn.png');
+                slider.style.height = '1168px'
+                slider.style.transition = '300ms'
+                toggleswitch = 'on';
+            } else {
+                btn_img.setAttribute('src', 'img/more_btn.png');
+                slider.style.height = '877px'
+                toggleswitch = 'off';
+            }            
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header start -->
+        <div class="header">
+            <div class="top_nav">
+                <div class="allmenu">
+                    <a href="javascript:doDisplay();"><img src="img/all_memu.gif" alt=""></a>
+                    <div id="open" class="allmenuwrap" style="display: none;">
+                        <li>
+                            <a class="title" href="#">구단</a>
+                            <a href="#">구단 소개</a>
+                            <a href="#">구단 소식</a>
+                            <a href="#">사회공헌활동</a>
+                            <a href="#">엠블럼 캐릭터</a>
+                            <a href="#">GO! 라팍</a>
+                        </li>
+                        <li>
+                            <a class="title" href="#">선수단</a>
+                            <a href="#">허삼영 감독</a>
+                            <a href="#">코칭 스텝</a>
+                            <a href="#">투수</a>
+                            <a href="#">타자</a>
+                            <a href="#">군입대선수</a>
+                            <a href="#">신입단선수</a>
+                        </li>
+                        <li>
+                            <a class="title" href="#">경기정보</a>
+                            <a href="#">1군 일정</a>
+                            <a href="#">퓨쳐스 일정</a>
+                            <a href="#">1군 엔트리</a>
+                            <a href="#">블루멥버십 안내</a>
+                        </li>
+                        <li>
+                            <a class="title" href="#">히스토리</a>
+                            <a href="#">레전드</a>
+                            <a href="#">히스토리</a>
+                            <a href="#">표창 및 수상</a>
+                            <a href="#">역대 성적</a>
+                            <a href="#">미디어가이드</a>
+                            <a href="#">삼성라이온즈21</a>
+                        </li>
+                        <li>
+                            <a class="title" href="#">팬</a>
+                            <a href="#">사자후</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">응원가</a>
+                            <a href="#">라이온즈 스토리</a>
+                            <a href="#">포토자료식</a>
+                            <a href="#">월페이퍼</a>
+                            <a href="#">SNS</a>
+                            <a href="#">팬클럽</a>
+                            <a href="#">치어리더</a>
+                        </li>
+                        <li>
+                            <a class="title" href="#">쇼핑</a>
+                            <a href="#">쇼핑</a>
+                        </li>
+                    </div>
+                </div>
+                <span class="login">로그인</span>
+            </div>
+            <div class="mainmenu">
+                <h2 class="logo"><a href="#"><img src="img/logo (1).png" alt="로고"></a></h2>
+                <ul class="mainmenulist">
+                    <ul class="menu menu1">
+                        <h3>구단</h3>
+                        <ul>
+                            <a href="#">구단 소개</a>
+                            <a href="#">구단 소식</a>
+                            <a href="#">사회공헌활동</a>
+                            <a href="#">엠블럼 캐릭터</a>
+                            <a href="#">GO! 라팍</a>
+                        </ul>
+                    </ul>
+                    <ul class="menu menu2">
+                        <h3>선수단</h3>
+                        <ul>
+                            <a href="#">허삼영 감독</a>
+                            <a href="#">코칭 스텝</a>
+                            <a href="#">투수</a>
+                            <a href="#">타자</a>
+                            <a href="#">군입대선수</a>
+                            <a href="#">신입단선수</a>
+                        </ul>
+                    </ul>
+                    <ul class="menu menu3">
+                        <h3>경기정보</h3>
+                        <ul>
+                            <a href="#">1군 일정</a>
+                            <a href="#">퓨쳐스 일정</a>
+                            <a href="#">1군 엔트리</a>
+                            <a href="#">블루멥버십 안내</a>
+                        </ul>
+                    </ul>
+                    <ul class="menu menu4">
+                        <h3>히스토리</h3>
+                        <ul>
+                            <a href="#">레전드</a>
+                            <a href="#">히스토리</a>
+                            <a href="#">표창 및 수상</a>
+                            <a href="#">역대 성적</a>
+                            <a href="#">미디어가이드</a>
+                            <a href="#">삼성라이온즈21</a>
+                        </ul>
+                    </ul>
+                    <ul class="menu menu5">
+                        <h3>팬</h3>
+                        <ul>
+                            <a class="title" href="#">팬</a>
+                            <a href="#">사자후</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">응원가</a>
+                            <a href="#">라이온즈 스토리</a>
+                            <a href="#">포토자료식</a>
+                            <a href="#">월페이퍼</a>
+                            <a href="#">SNS</a>
+                            <a href="#">팬클럽</a>
+                            <a href="#">치어리더</a>
+                        </ul>
+                    </ul>
+                    <ul class="menu menu6">
+                        <h3>쇼핑</h3>
+                        <ul>
+                            <a href="#">쇼핑</a>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <!-- header end -->
+        <!-- main start -->
+        <div class="main">
+            <div class="title">
+                <img src="img/prode_tit01.png" alt="타이틀">
+            </div>
+            <div class="content_top">
+                <div class="contentwrap">
+                    <h2>라이온즈tv</h2>
+                    <ul>
+                        <li><img src="img/Untitled-1.png" alt=""></li>
+                        <li class="title">2020시즌, 라이온즈tv와 함께</li>
+                        <li class="text">덕아웃에서 관중석으로 카메라를 돌렸지만 생생함은 그대로, 2020시준 삼성 라이온즈 선수단을 더 가까이 만나보세요!</li>
+                    </ul>
+                </div>
+                <div class="contentwrap">
+                    <h2>엠블럼 & 캐릭터</h2>
+                    <ul>
+                        <li><img src="img/promotion_20200913.png" alt=""></li>
+                        <li class="title">볼레오 패밀리</li>
+                        <li class="text">머나먼 우주 어딘가, 블레오 행성, 블레오 행성에는 천재적인 레전드 타자 블레오가 있다. 새로운 리그로 눈을 돌리는데...</li>
+                    </ul>
+                </div>
+                <div class="contentwrap">
+                    <h2>입찰공고</h2>
+                    <ul>
+                        <li><img src="img/promotion_20201022.png(2).png" alt=""></li>
+                        <li class="title">2021~2022시즌 광고사업협력사 선정 입찰</li>
+                        <li class="text">대구삼성라이온즈파크 내 광고매체 판매대항 및 설치물 운영/관리를 담당할 협력사 입찰을 진행합니다.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_bottom">
+                <h2><span>올 댓 라이온즈</span></h2>
+                <ul id="imgwrap" class="imgwrap" style="height: 877px; overflow: hidden;">
+                    <div class="wrap">
+                        <li class="img">
+                            <a href=""><img src="img/golp.jpg" alt=""></a>
+                        </li>
+                        <li class="img">
+                            <a href=""><img src="img/라이온즈tv2.png" alt=""></a>
+                        </li>
+                        <li class="img">
+                            <a href=""><img src="img/song(2).jpg" alt=""></a>
+                        </li>
+                        <li class="img">
+                            <a href=""><img src="img/프리뷰.png" alt=""></a>
+                        </li>
+                        <li class="img">
+                            <a href=""><img src="img/라이온즈tv2.png" alt=""></a>
+                        </li>
+                        <li class="img">
+                            <a href=""><img src="img/golp.jpg" alt=""></a>
+                        </li>
+                        <li class="img">
+                            <a href=""><img src="img/프리뷰.png" alt=""></a>
+                        </li>
+                        <li class="img">
+                            <a href=""><img src="img/song(2).jpg" alt=""></a>
+                        </li>
+                        <li class="img">
+                            <a href=""><img src="img/song(2).jpg" alt=""></a>
+                        </li>
+                        <li class="img">
+                            <a href=""><img src="img/프리뷰.png" alt=""></a>
+                        </li>
+                        <li class="img">
+                            <a href=""><img src="img/라이온즈tv2.png" alt=""></a>
+                        </li>
+                        <li class="img">
+                            <a href=""><img src="img/golp.jpg" alt=""></a>
+                        </li>
+                        <li class="img">
+                            <a href=""><img src="img/golp.jpg" alt=""></a>
+                        </li>
+                    </div>
+
+                </ul>
+                <div class="btn_more">
+                        <img id="toggle" src="img/more_btn.png" alt="" onclick="toggle()">
+                </div>
+            </div>
+            <div class="title2">
+                <img src="img/main_event02.jpg" alt="타이틀">
+            </div>
+            <div class="menu_bottom">
+                <div class="menuwrap">
+                    <h3><span>구단</span></h3>
+                    <ul class="menulist">
+                        <li><a href="#">구단 소개</a></li>
+                        <li><a href="#">구단 소식</a></li>
+                        <li><a href="#">사회공헌활동</a></li>
+                        <li><a href="#">엠블럼 캐릭터</a></li>
+                        <li><a href="#">GO! 라팍</a></li>
+                    </ul>
+                </div>
+                <div class="menuwrap">
+                    <h3><span>선수단</span></h3>
+                    <ul class="menulist">
+                        <li><a href="#">허삼영 감독</a></li>
+                        <li><a href="#">코칭스탭</a></li>
+                        <li><a href="#">투수</a></li>
+                        <li><a href="#">타자</a></li>
+                        <li><a href="#">군입대선수</a></li>
+                        <li><a href="#">신입단선수</a></li>
+                    </ul>
+                </div>
+                <div class="menuwrap">
+                    <h3><span>경기정보</span></h3>
+                    <ul class="menulist">
+                        <li><a href="#">1군일정</a></li>
+                        <li><a href="#">퓨처스 일정</a></li>
+                        <li><a href="#">1군 엔트리</a></li>
+                        <li><a href="#">블루멤버십 안내</a></li>
+                    </ul>
+                </div>
+                <div class="menuwrap">
+                    <h3><span>히스토리</span></h3>
+                    <ul class="menulist">
+                        <li><a href="#">레전드</a></li>
+                        <li><a href="#">히스토리</a></li>
+                        <li><a href="#">표창 및 수상</a></li>
+                        <li><a href="#">역대 성적</a></li>
+                        <li><a href="#">미디어가이드</a></li>
+                        <li><a href="#">삼성라이온즈21</a></li>
+                    </ul>
+                </div>
+                <div class="menuwrap">
+                    <h3><span>팬</span></h3>
+                    <ul class="menulist">
+                        <li><a href="#">사자후</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">응원가</a></li>
+                        <li><a href="#">라이온즈 스토리</a></li>
+                        <li><a href="#">월페이퍼</a></li>
+                        <li><a href="#">SNS</a></li>
+                        <li><a href="#">팬클럽</a></li>
+                        <li><a href="#">치어리더</a></li>
+                    </ul>
+                </div>
+                <div class="menuwrap">
+                    <h3><span>쇼핑</span></h3>
+                    <ul class="menulist">
+                        <li><a href="#">쇼핑</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- main end -->
+        <!-- footer start -->
+        <div class="footer">
+            <div class="footerwrap">
+                <div class="logo">
+                    <a href="#"><img src="img/footer_logo.png" alt=""></a>
+                </div>
+                <div class="contentwrap">
+                    <ul>
+                        <a href="#">이용악관</a>
+                        <a class="accent" href="">개인정보처리방침</a>
+                        <a href="">영상정보처리기기 운영관리방침</a>
+                        <a href="">이메일무단수집거부</a>
+                        <a href="">Contact Us</a>
+                        <a href="">광고문의</a>
+                        <a href="">Site Map</a>
+                        <a href="">언론사진자료실</a>
+                    </ul>
+                    <div>
+                        <p>대표이사: 원기찬 / 사업자번호: 504-81-03755 / 개인정보취급방침관리자: 삼성 라이온즈 / 전화번호: 053-780-3300 / 주소: 대구광역시 수성구
+                            야구전설로 1 Copyright©Samsung Lions. All Right Reserved.</p>
+                    </div>
+                </div>
+                <div class="logo2">
+                    <a href="#"><img src="img/footer_norton.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+</body>
+
+</html>
