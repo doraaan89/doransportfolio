@@ -7,7 +7,7 @@
   <title>Doran's Portfolio</title>
 
   <!-- Reset CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
   <!-- material icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- bootstrap -->
@@ -23,6 +23,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
   <!-- main css -->
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" media="(max-width: 1024px)" href="css/main_medium.css">
+  <link rel="stylesheet" media="(max-width: 768px)" href="css/main_small.css">
   <!-- main js -->
   <script defer src="js/main.js"></script>
 </head>
@@ -33,19 +35,33 @@
     <header>
       <div class="inner">
         <div class="logo">
-          <a href=""><img src="./images/logo.png" alt=""></a>
+          <a href="#">
+            <span class="material-icons"><span class="material-icons-outlined">
+              music_note
+              </span></span> D O R A N</a>
+          <span class="lgtext">WEB PUBLISHER PORTFOLIO</span>
         </div>
       </div>
     </header>
 
     <section class="visual">
       <div class="inner">
+        <h3>Project Introduce</h3>
+
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="/starbucksClone/">
-                <img src="" alt="">
-                <span>스타벅스 클론 사이트</span>
+                <div class="thumb__container">
+                  <img src="./images/starbucks.svg" alt="">
+                </div>
+                <div class="summary">
+                  <h4>스타벅스 클론 사이트</h4>
+                  <p>
+                    HTML, CSS, Javascript<br />
+                    ( lodash, gsap, swiper, scrollmagic )
+                  </p>
+                </div>
               </a>
             </div>
             <div class="swiper-slide">
@@ -85,6 +101,45 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="inner">
+        <div class="contactus">
+          <h4>CONTACT US</h4>
+          프로젝트를 제안하기 원하시는 분은 연락주시기 바랍니다.
+          <div class="items">
+            <div class="item">
+              <span class="material-icons contact">call</span>
+              010 4641 4508
+            </div>
+            <div class="item">
+              <span class="material-icons contact">email</span>
+              doraaan89@gmail.com
+            </div>
+            <ul class="sns">
+              <li>
+                <a href="#">
+                  <img src="./images/facebook.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/insta.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/kakao.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copy">
+          Copyright © Young An Kim a.k.a DORAN, All rights reserved.
+        </div>
+      </div>
+    </footer>
 
   </div>
     
