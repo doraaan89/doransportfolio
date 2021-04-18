@@ -1,5 +1,4 @@
 .body__container {
-  max-width: 800px;
   height: 1000px;
   font-family: 'Sunflower', sans-serif;
   margin: 0 auto;
@@ -8,14 +7,14 @@
   right: 0;
 }
 .inner {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
 }
 
 
 /* HEADER */
 .inner .logo {
-  width: 600px;
+  width: auto;
   height: 150px;
   margin: 0 auto;
   padding: 20px 0;
@@ -28,7 +27,7 @@
 
 /* VISUAL */
 .visual .swiper-container {
-  width: 600px;
+  width: 100%;
   position: absolute;
 }
 .visual .swiper-slide {
@@ -49,7 +48,7 @@
   color: #dddddd;
 }
 .visual .thumb__container {
-  width: 150px;
+  width: auto;
   text-align: center;
   margin: 0 auto;
   padding: 50px 0;
@@ -61,7 +60,7 @@
 }
 .visual .swiper-slide .summary {
   padding: 50px 20px;
-  width: 200px;
+  width: auto;
   margin: 0 auto;
 }
 .visual .swiper-slide .summary h4 {
@@ -96,33 +95,5 @@
 }
 .visual .swiper-prev,
 .visual .swiper-next {
-  width: 60px;
-  height: 60px;
-  border: 2px solid #555555;
-  border-radius: 50%;
-  position: absolute;
-  top: 300px;
-  z-index: 1;
-  cursor: pointer;
-  outline: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: .3s;
-  user-select: none;
-  opacity: .7;
-}
-.visual .swiper-prev {
-  left: 95%;
-  margin-left: -480px;
-}
-.visual .swiper-next {
-  right: 95%;
-  margin-right: -480px;
-}
-.visual .swiper-prev:hover,
-.visual .swiper-next:hover {
-  background-color: #333;
-  color: #fff;
-  opacity: 1;
+  display: none;
 }

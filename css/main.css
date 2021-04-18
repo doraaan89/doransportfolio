@@ -3,7 +3,6 @@ body {
 }
 
 .body__container {
-  max-width: 1200px;
   height: 1000px;
   font-family: 'Sunflower', sans-serif;
   margin: 0 auto;
