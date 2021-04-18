@@ -78,10 +78,7 @@
   opacity: 1;
 }
 .visual .swiper-pagination {
-  position: absolute;
-  top: 660px;
-  left: 0;
-  right: 0;
+  display: none;
 }
 .visual .swiper-pagination .swiper-pagination-bullet {
   width: 16px;

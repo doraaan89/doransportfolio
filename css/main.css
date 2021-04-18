@@ -57,7 +57,6 @@ header {
   border-top: 2px solid #777;
   position: relative;
   height: 800px;
-
 }
 .visual .inner h3 {
   padding-top: 30px;
@@ -65,6 +64,7 @@ header {
 }
 .visual .swiper-container {
   width: 1000px;
+  height: 800px;
   position: absolute;
 }
 .visual .swiper-slide {
@@ -115,11 +115,14 @@ header {
   opacity: 1;
 }
 .visual .swiper-pagination {
-  height: 20px;
   position: absolute;
-  top: 660px;
+  top: 630px;
   left: 0;
   right: 0;
+}
+.visual .swiper-pagination-bullet:hover {
+  transform: scale(2);
+  transition: all .3s;
 }
 .visual .swiper-pagination .swiper-pagination-bullet {
   width: 16px;
