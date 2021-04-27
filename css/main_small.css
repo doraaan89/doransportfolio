@@ -55,8 +55,8 @@
   border-bottom: 5px dotted #ccc;
 }
 .visual .thumb__container>img {
-  width: 100px;
-  height: 100px;
+  width: 50%;
+
 }
 .visual .swiper-slide .summary {
   padding: 50px 20px;

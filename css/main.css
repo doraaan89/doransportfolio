@@ -3,8 +3,13 @@ body {
 }
 .youtube__background {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  margin-left: calc(1000px / -2);
+  top: 105px;
+  z-index: -9;
+  width: 1000px;
+  height: 905px;
+  background-color: #333;
   overflow: hidden;
 }
 .youtube__background .youtube__area {
@@ -14,7 +19,7 @@ body {
   z-index: -99;
   left: 50%;
   margin-left: calc(1920px / -2);
-  top: 75px;
+  top: -105px;
 }
 .youtube__background .youtube__area::before {
   /* position: absolute; */
@@ -22,10 +27,10 @@ body {
   display: block;
   width: 100%;
   height: 0;
-  padding-top: 47.15%;
+  padding-top: 56.25%;
 }
 .youtube__background .youtube__cover {
-  background-color: rgba(153, 153, 153, 0.7);
+  background-color: rgba(153, 153, 153, 0.9);
   position: absolute;
   z-index: -98;
   top: 0;
@@ -87,9 +92,7 @@ header {
 }
 
 /* VISUAL */
-.visual {
 
-}
 .visual .inner {
   margin-top: 30px;
   border-top: 2px solid #777;
